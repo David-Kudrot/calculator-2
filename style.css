@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+
+h1{
+    margin-top: 2rem;
+    font-style: italic;
+    color: white;
+}
+
+/* calculator main part */
+
+.mainPart{
+    height: 80vh;
+    width: 60vh;
+    margin: auto;
+    border: solid black 1px;
+    margin-top: 5vh;
+    border-radius: 5px;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 30px 5px rgb(36, 33, 33);
+}
+
+.button{
+    background-color: #192a56;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:5px 5px 20px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button:hover{
+    box-shadow: inset 2px 2px 10px 2px black;
+}
+.equal{
+    background-color: #1dbb44;
+    z-index: 1;
+}
+
+.allClear{
+    background-color: #EA2027;
+}
+
+.delete{
+    background-color: #1d5529;
+
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: rgb(172, 233, 238);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0 15px 0 10px;
+    overflow: hidden;
+    box-shadow: inset 1px 1px 10px 1px rgb(75, 72, 72);
+  }
+
+  .previous-operand{
+    color: rgba(3, 3, 3, 0.75);
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 5vh;
+  }
+
+  .current-operand{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 700;
+
+    height: 8vh;
+  }
+
+
+
+
+
+.number{
+    background-color: #0f8f94;
+}

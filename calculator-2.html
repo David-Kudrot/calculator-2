@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator By Js and Tailwind CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-stone-600">
+    <div class="container m-auto text-center col-md">
+        <h1 class="text-5xl font-serif bg-dark " >Hey buddy check this Calculator</h1>
+
+        <div class="mainPart grid grid-cols-4 gap-2">
+            <div data-display class="output col-span-4">
+                <div data-previous-operand id="previous-operand" class="previous-operand "></div>
+                <div data-current-operand id="current-operand" class="current-operand "></div>
+            </div>
+            <div data-all-clear id="allClear" class="button allClear">AC</div>
+            <div data-delete id="deleteButton" class="button delete">></div>
+            <div data-operator class="button">÷</div>
+            <div data-operator class="button">*</div>
+            <div data-number class="button number">1</div>
+            <div data-number class="button number">2</div>
+            <div data-number class="button number">3</div>
+            <div data-operator class="button">-</div>
+            <div data-number class="button number">4</div>
+            <div data-number class="button number">5</div>
+            <div data-number class="button number">6</div>
+            <div data-operator class="button">+</div>
+            <div data-number class="button number">7</div>
+            <div data-number class="button number">8</div>
+            <div data-number class="button number">9</div>
+            <div data-equal id="equalButton" class="button equal row-span-2">=</div>
+            <div data-number class="button col-span-2 number">0</div>
+            <div data-number class="button number">.</div>
+        </div>
+
+    </div>
+
+
+    <script src="calculator.js"></script>
+</body>
+</html>
